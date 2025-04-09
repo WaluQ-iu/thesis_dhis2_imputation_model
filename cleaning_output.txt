@@ -1,0 +1,76 @@
+(venv) walusiku@Qs-MacBook-Pro thesis_dhis2_imputation_model % python cleaning.py
+
+--- First 5 Rows ---
+      daily  monthly  yearly  ...  created   ouname          tei
+0  20230506   202305    2023  ...  56:29.3   Ngungu  L4MnRnoxhK7
+1  20230502   202305    2023  ...  47:24.8  Katondo  EGQPe0KHBgZ
+2  20230329   202303    2023  ...  01:19.3  Kabundi  bp8ArBsLVW1
+3  20230531   202305    2023  ...  10:27.3  Katondo  HjGkgbmak0l
+4  20230110   202301    2023  ...  42:23.3   Makeni  L4A4KUbqlEA
+
+[5 rows x 24 columns]
+
+--- Column Names ---
+['daily', 'monthly', 'yearly', 'AGYW Age group', 'Is this girl eligible for enrollment', 'Enrol in DREAMS', 'AGYW Date of Birth', 'AGYW Age', 'AGYW Sex', 'AGYW Age Group', 'consent_obtained', 'AGYW Agrees to Participate?', 'AGYW District/Town of Birth', 'Screened By-New', 'Date of First Contact', 'psi', 'enrollmentdate', 'incidentdate', 'executiondate', 'duedate', 'completeddate', 'created', 'ouname', 'tei']
+
+--- Dataset Info ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 327323 entries, 0 to 327322
+Data columns (total 24 columns):
+ #   Column                                Non-Null Count   Dtype  
+---  ------                                --------------   -----  
+ 0   daily                                 327323 non-null  int64  
+ 1   monthly                               327323 non-null  int64  
+ 2   yearly                                327323 non-null  int64  
+ 3   AGYW Age group                        326048 non-null  object 
+ 4   Is this girl eligible for enrollment  323937 non-null  float64
+ 5   Enrol in DREAMS                       264665 non-null  float64
+ 6   AGYW Date of Birth                    327302 non-null  object 
+ 7   AGYW Age                              327087 non-null  float64
+ 8   AGYW Sex                              317799 non-null  object 
+ 9   AGYW Age Group                        327289 non-null  object 
+ 10  consent_obtained                      323955 non-null  float64
+ 11  AGYW Agrees to Participate?           327068 non-null  float64
+ 12  AGYW District/Town of Birth           171469 non-null  object 
+ 13  Screened By-New                       60304 non-null   object 
+ 14  Date of First Contact                 327292 non-null  object 
+ 15  psi                                   327323 non-null  object 
+ 16  enrollmentdate                        327323 non-null  object 
+ 17  incidentdate                          327323 non-null  object 
+ 18  executiondate                         327248 non-null  object 
+ 19  duedate                               327323 non-null  object 
+ 20  completeddate                         281015 non-null  object 
+ 21  created                               327323 non-null  object 
+ 22  ouname                                327323 non-null  object 
+ 23  tei                                   327323 non-null  object 
+dtypes: float64(5), int64(3), object(16)
+memory usage: 59.9+ MB
+None
+
+--- Missing Data (%) by Column ---
+Screened By-New                         81.576608
+AGYW District/Town of Birth             47.614741
+Enrol in DREAMS                         19.142559
+completeddate                           14.147493
+AGYW Sex                                 2.909664
+Is this girl eligible for enrollment     1.034452
+consent_obtained                         1.028953
+AGYW Age group                           0.389523
+AGYW Agrees to Participate?              0.077905
+AGYW Age                                 0.072100
+executiondate                            0.022913
+AGYW Age Group                           0.010387
+Date of First Contact                    0.009471
+AGYW Date of Birth                       0.006416
+created                                  0.000000
+ouname                                   0.000000
+duedate                                  0.000000
+daily                                    0.000000
+incidentdate                             0.000000
+enrollmentdate                           0.000000
+psi                                      0.000000
+monthly                                  0.000000
+yearly                                   0.000000
+tei                                      0.000000
+dtype: float64
+(venv) walusiku@Qs-MacBook-Pro thesis_dhis2_imputation_model % 
